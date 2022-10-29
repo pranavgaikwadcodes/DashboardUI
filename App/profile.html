@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="Nav">
+            <div class="sideNavbar">
+                <div class="logo">
+                    <div class="name">HCI Assignment</div>
+                    <div class="pic">
+                        <img src="/assets/logo.jpg" alt="">
+                    </div>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li> <a href="/App/dashboard.html">
+                                <span class="material-symbols-outlined">
+                                    dashboard
+                                </span>
+                                Dashboard
+                            </a> 
+                        </li>
+                        <li> <a href="/App/orders.html">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                                Orders
+                            </a> 
+                        </li>
+                        <li> <a href="">
+                                <span class="material-symbols-outlined">
+                                    category
+                                </span>
+                                Categories
+                            </a> 
+                        </li>
+                        <li> <a href="">
+                                <span class="material-symbols-outlined">
+                                    sentiment_very_satisfied
+                                </span>
+                                Customers
+                            </a> 
+                        </li>
+                        <li> <a href="/App/profile.html" class="active">
+                                <span class="material-symbols-outlined">
+                                    Settings
+                                </span>
+                                Settings
+                            </a> 
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" onclick="location.href='/index.html'">Logout</button>
+            </div>
+    
+            <div class="topNavbar">
+                <div class="notificationBtn">
+                    <span class="material-symbols-outlined">
+                        notifications
+                    </span>
+                </div>
+                <div class="accountLogo">
+                    <a href="/App/profile.html">
+                        <img src="/assets/logo.png" alt="Account" srcset="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="Title">Profile</div>
+
+            <div class="profileInfo">
+                <label for="AccountHolder">Account Holder</label>
+                <input type="text" value="Pranav Gaikwad" name="AccountHolder">
+
+                <div class="basics">
+                    <label for="Age">Age</label>
+                    <input type="number" value="20" name="Age">
+                    
+                    <label for="DOB">Date Of Birth</label>
+                    <input type="date" value="2002-08-11">
+                </div>
+
+                <div class="selectors">
+                    <label for="Course">Course Enrolled</label>
+                    <select name="Course" id="Course">
+                        <option value="B.tech Computer Science">B.tech (Computer Science)</option>
+                        <option value="B.tech Information Technology" selected>B.tech (Information Technology)</option>
+                        <option value="B.tech AI & DS">B.tech (AI & DS)</option>
+                        <option value="B.tech ENTC">B.tech (ENTC)</option>
+                    </select>
+
+                    <label for="accountStatus">Account Status</label>
+                    <select name="accountStatus" id="accountStatus">
+                        <option value="Active" selected>Active</option>
+                        <option value="Inactive">Inactive</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="button">
+                <button type="submit">
+                    Update Profile
+                    <span class="material-symbols-outlined">
+                        upgrade
+                    </span>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
